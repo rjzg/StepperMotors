@@ -20,12 +20,12 @@ void loop() {
   buttonState2 = digitalRead(3);
   
   s.write(0); 
-  if (buttonState1 == LOW) {
+  if (buttonState1 == HIGH) {
     pos+=90; 
     s.write(pos);
   }
   
-  if (buttonState2 == LOW) {
+  if (buttonState2 == HIGH) {
     pos-=90;
     s.write(pos);
     
